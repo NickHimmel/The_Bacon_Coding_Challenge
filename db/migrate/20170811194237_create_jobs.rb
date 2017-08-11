@@ -6,7 +6,8 @@ class CreateJobs < ActiveRecord::Migration[5.0]
       t.string :level
       t.integer :salary
       t.text :description
-      t.string :location
+      t.string :city
+      t.string :state
 
       t.timestamps
     end
