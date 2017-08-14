@@ -1,12 +1,7 @@
 class AllJobs extends React.Component {
-  constructor () {
-    super();
-    this.state = { jobs: [] }
-  }
   componentDidMount() {
     console.log('Component mounted')
   }
-
   render() {
     return (
       <div>
