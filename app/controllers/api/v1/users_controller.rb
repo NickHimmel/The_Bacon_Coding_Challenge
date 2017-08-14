@@ -1,6 +1,9 @@
 class Api::V1::UsersController < Api::V1::BaseController
-  
+
   before_action :set_user, only: [:show]
+
+  def index
+  end
 
   def create
     @user = User.create!(user_params)
