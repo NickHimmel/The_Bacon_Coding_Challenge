@@ -35,6 +35,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'jquery-rails'
+gem 'react-router-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
