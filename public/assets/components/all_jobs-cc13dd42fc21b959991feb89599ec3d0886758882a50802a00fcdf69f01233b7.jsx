@@ -10,7 +10,7 @@ class AllJobs extends React.Component {
   render() {
     let jobs = this.state.jobs.map((job) => {
       return (
-        <JobListing key={job.id} job={job}/>
+        <JobListing key={job.id} {...job}/>
       )
     });
 
