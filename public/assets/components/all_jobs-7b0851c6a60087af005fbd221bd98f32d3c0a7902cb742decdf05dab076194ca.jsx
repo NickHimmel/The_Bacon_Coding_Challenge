@@ -8,18 +8,9 @@ class AllJobs extends React.Component {
   }
 
   render() {
-    let jobs = this.state.jobs.map((job) => {
-      return (
-        <div>
-          <h2>{job.title}</h2>
-          <h3>{job.company}</h3>
-        </div>
-      )
-    });
-
     return (
       <div>
-        {jobs}
+        <h1>All jobs</h1>
       </div>
     )
   }
