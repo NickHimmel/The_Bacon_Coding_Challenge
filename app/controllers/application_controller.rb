@@ -1,5 +1,7 @@
-class ApplicationController < ActionController::API
-  respond_to :json
-  include Response
-  include ExceptionHandler
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :null_session
+
+  # respond_to :json
+  # include Response
+  # include ExceptionHandler
 end
