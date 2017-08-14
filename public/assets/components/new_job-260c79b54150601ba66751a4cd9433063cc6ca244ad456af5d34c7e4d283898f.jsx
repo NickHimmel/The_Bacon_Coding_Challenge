@@ -13,7 +13,6 @@ class NewJob extends React.Component {
         <textarea ref="description" rows="5" cols="25">Description of the Job</textarea>
         <input ref="city" placeholder='Enter city' />
         <input ref="state" placeholder='Enter state, NY for New York etc' />
-        <button onClick={this.handleClick}>Submit</button>
       </div>
 
     )
