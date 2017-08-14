@@ -35,7 +35,7 @@ RSpec.describe 'User API' do
     let(:valid_attributes) { { username: "Test", email: "test@rspec.com", password: "123456" } }
 
     context 'when the request is valid' do
-      before { post '/user', params: valid_attributes}
+      before { post '/users', params: valid_attributes}
 
       it 'creates a user' do
         expect(json['username']).to eq('Test')
@@ -55,7 +55,7 @@ RSpec.describe 'User API' do
 
       it 'returns a validation failure message' do
         expect(response.body)
-          .to match(/Validation failed: Created by can't be blank/)
+          .to match(/Validation failed: Email can't be blank, Password can't be blank, Password is too short (minimum is 6 characters)/)
       end
     end
   end

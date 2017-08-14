@@ -15,4 +15,8 @@ class UsersController < ApplicationController
   def user_params
     params.permit(:username, :email, :password)
   end
+
+  def set_user
+    @user = User.find(params[:id])
+  end
 end
