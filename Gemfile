@@ -33,6 +33,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'uglifier'
 gem 'coffee-rails'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
