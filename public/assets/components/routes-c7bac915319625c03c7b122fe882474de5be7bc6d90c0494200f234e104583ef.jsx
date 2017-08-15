@@ -6,14 +6,15 @@ var IndexLink = ReactRouter.IndexLink;
 var IndexRedirect = ReactRouter.IndexRedirect;
 var hashHistory = ReactRouter.hashHistory;
 var browserHistory = ReactRouter.browserHistory;
+debugger
+class Routes extends React.Component {
+  render() {
+    return (
+        <Router history={hashHistory}>
+          <Route path='/' component={Main}>
 
-const Routes = () => {
-  return (
-      <Router history={hashHistory}>
-        <Route path='/' component={Main}>
-           <IndexRoute component={AllJobs}/>
-           <Route path='/edit' component={NewJob}/>
-        </Route>
-      </Router>
-  )
+          </Route>
+        </Router>
+    )
+  }
 }
