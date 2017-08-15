@@ -6,6 +6,9 @@ const Nav = () => {
         <h2>The finest bacon</h2>
       </div>
       <NavLinks />
+      <div className="col-sm-12 col-md-4">
+        <p>Nav Links Here</p>
+      </div>
     </div>
   )
 }
