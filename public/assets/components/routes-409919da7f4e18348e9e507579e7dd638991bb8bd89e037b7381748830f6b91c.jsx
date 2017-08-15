@@ -9,11 +9,11 @@ var browserHistory = ReactRouter.browserHistory;
 
 const Routes = () => {
   return (
-    <Router history={hashHistory}>
-      <Route path='/' component={Main}>
-         <IndexRoute component={AllJobs}/>
-         <Route path='/create' component={NewJob}/>
-      </Route>
-    </Router>
+      <Router history={hashHistory}>
+        <Route path='/' component={Main}>
+           <IndexRoute component={AllJobs}/>
+           <Route path='/create' component={NewJob}/>
+        </Route>
+      </Router>
   )
 }
