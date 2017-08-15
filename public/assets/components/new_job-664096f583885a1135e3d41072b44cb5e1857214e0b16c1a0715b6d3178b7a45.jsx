@@ -16,11 +16,11 @@ class NewJob extends React.Component {
     $.ajax({
       url: '/api/v1/jobs',
       type: 'POST',
-      data: { title: title, company: company, level: level, salary: salary, description: description, city: city, state: state, user_id: user_id },
+      data: { job: { title: title, company: company, level: level, salary: salary, description: description, city: city, state: state, user_id: user_id } },
       success: (response) => {
         console.log('it worked!', response);
       }
-    });
+    });  
   }
   render() {
     return (
