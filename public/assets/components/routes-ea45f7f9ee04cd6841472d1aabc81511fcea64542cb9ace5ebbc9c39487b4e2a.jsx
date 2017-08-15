@@ -7,6 +7,7 @@ var IndexRedirect = ReactRouter.IndexRedirect;
 var hashHistory = ReactRouter.hashHistory;
 var browserHistory = ReactRouter.browserHistory;
 
+debugger;
 class Routes extends React.Component {
   render() {
     return (

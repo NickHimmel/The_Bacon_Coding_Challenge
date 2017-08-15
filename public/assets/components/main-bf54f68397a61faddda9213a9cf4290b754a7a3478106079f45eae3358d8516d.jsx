@@ -2,7 +2,7 @@ const Main = (props) => {
   return (
     <div className="container">
       <Nav />
-      {/* {props.children} */}
+      {props.children}
     </div>
   )
 }
