@@ -10,18 +10,14 @@ class AllJobs extends React.Component {
   render() {
     let jobs = this.state.jobs.map((job) => {
       return (
-        <div className="job-listing">
-          <JobListing key={job.id} job={job}/>
-          <div className="job-button">
-            <li className="pill-box view-jobs"><Link to="/create" activeClassName="active">View Job</Link></li>
-          </div>
-        </div>
+        <JobListing key={job.id} job={job}/>
       )
     });
 
     return (
-      <div className="all-jobs">
+      <div className="row all-jobs">
         {jobs}
+        <li className="pill-box"><Link to="/create" activeClassName="active">View Job</Link></li>
       </div>
     )
   }

@@ -1,6 +1,6 @@
 .nav-bar {
   height: 75px;
-  width: 103%;
+  width: 100%;
   background-color: #fff;
   position: fixed;
   border-bottom: #DFDFDF solid 1px;
@@ -12,8 +12,9 @@
   font-size: 2.3em;
   text-transform: uppercase;
   font-weight: 300;
-  margin-left: 10px;
+  margin-left: 25px;
   color: #2c398f;
+  float: left;
 }
 
 .nav-links {

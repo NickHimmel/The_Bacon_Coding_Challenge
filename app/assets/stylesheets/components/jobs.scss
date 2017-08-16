@@ -3,7 +3,7 @@
 }
 
 .job-listing {
-  margin: 10px 5px;
+  margin: 10px 25px;
 }
 
 .job-title {
@@ -33,5 +33,14 @@
   color: #2c398f;
   font-size: 1.2em;
   margin-top: 15px;
+  margin-bottom: 25px;
   width: 95%;
+}
+
+.job-button {
+  height: 38px;
+}
+
+.view-jobs {
+  float: right;
 }

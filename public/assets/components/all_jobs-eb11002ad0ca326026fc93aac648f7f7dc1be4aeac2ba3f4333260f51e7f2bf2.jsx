@@ -12,9 +12,7 @@ class AllJobs extends React.Component {
       return (
         <div className="job-listing">
           <JobListing key={job.id} job={job}/>
-          <div className="job-button">
-            <li className="pill-box view-jobs"><Link to="/create" activeClassName="active">View Job</Link></li>
-          </div>
+          <li className="pill-box view-jobs"><Link to="/create" activeClassName="active">View Job</Link></li>
         </div>
       )
     });
