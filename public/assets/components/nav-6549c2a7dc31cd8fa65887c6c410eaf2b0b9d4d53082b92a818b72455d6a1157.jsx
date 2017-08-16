@@ -1,9 +1,11 @@
 const Nav = () => {
   return (
-    <div className="row nav-bar">
-      <div className="col-xs-2 col-sm-2 col-md-2 header">
+    <div className="row">
+      <div className="nav-bar">
+      <div className="col-sm-12 col-md-6 header">
         <h1 className="logo">Prosciutto</h1>
       </div>
+    </div>
       <NavLinks />
     </div>
   )

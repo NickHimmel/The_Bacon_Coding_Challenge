@@ -7,6 +7,7 @@ const NavLinks = () => {
           <li>Log In</li>
           <li>Log Out</li>
           <li>About</li>
+          <li><Link to="/" activeClassName="active">Home</Link></li>
           <li className="pill-box"><Link to="/create" activeClassName="active">Post a Job</Link></li>
         </ul>
     </div>

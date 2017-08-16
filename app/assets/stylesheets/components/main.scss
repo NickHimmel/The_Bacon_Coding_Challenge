@@ -5,10 +5,9 @@ ul {
   -webkit-padding-start: 0px;
 }
 
-a,
-a:active,
-a:visited,
-a:hover {
-  text-decoration: none;
-  color: black;
+li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 6px 12px;
+  text-transform: uppercase;
 }
