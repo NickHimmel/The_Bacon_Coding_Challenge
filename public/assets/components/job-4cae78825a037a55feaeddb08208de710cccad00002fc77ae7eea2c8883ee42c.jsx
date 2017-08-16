@@ -1,4 +1,4 @@
-const JobListing = (props) => {
+const Job = (props) => {
   return (
     <div>
       <h2 className="job-title">{props.job.title}</h2>
