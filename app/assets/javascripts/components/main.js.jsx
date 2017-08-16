@@ -1,6 +1,6 @@
 const Main = (props) => {
   return (
-    <div className="container-flex">
+    <div className="container">
       <Nav />
       {props.children}
     </div>

@@ -1,0 +1,37 @@
+.all-jobs {
+  margin-top: 100px;
+}
+
+.job-listing {
+  margin: 10px 5px;
+}
+
+.job-title {
+  color: #2c398f;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.job-company {
+  margin-top: 0;
+  font-size: 2em;
+  color: #7cf8fa;
+}
+
+.city, .state {
+  display: inline;
+  color: #23fdd8;
+  font-size: 1.35em;
+  font-weight: 300;
+}
+
+.state {
+  padding-left: 10px;
+}
+
+.description {
+  color: #2c398f;
+  font-size: 1.2em;
+  margin-top: 15px;
+  width: 95%;
+}
