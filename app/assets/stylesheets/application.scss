@@ -1,3 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url("components/main.scss")
+@import url("components/main.scss");
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: red;
+  font-size: 112.5%;
+}
