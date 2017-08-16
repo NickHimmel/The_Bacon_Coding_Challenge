@@ -13,7 +13,7 @@ class AllJobs extends React.Component {
         <div className="job-listing">
           <Job key={job.id} job={job}/>
           <div className="job-button">
-            <li className="pill-box view-jobs"><Link to={ {pathname: `/jobs/${job.id}`} }>View Job</Link></li>
+            <li className="pill-box view-jobs"><Link to={ {pathname: `/projects/${id}`} }>View Job</Link></li>
           </div>
         </div>
       )
