@@ -17,17 +17,18 @@ class NewJob extends React.Component {
       type: 'POST',
       data: { title: title, company: company, level: level, description: description, city: city, state: state, user_id: user_id },
       success: (response) => {
+        alert("Your job has been posted!");
         window.location.href = '/';
       },
       error: (response) => {
-        $('.error').text(response.responseText);
+        console.log(response)
       }
     });
   }
   render() {
     return (
       <div className="job-listing">
-        <div><h1 className="error"></h1></div>
+        <div className="error"><h1></h1></div>
         <div className="job-form-container">
           <h1>Post A Job</h1>
           <form className="job-form">

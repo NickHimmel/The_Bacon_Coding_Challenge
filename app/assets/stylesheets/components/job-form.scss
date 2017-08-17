@@ -1,0 +1,24 @@
+.job-form-container {
+  margin: 50px 5px;
+  border:  #DFDFDF solid 1px;
+  border-radius: 20px;
+  padding: 25px;
+  h1 {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.job-form {
+  label {
+    padding-right: 15px;
+    font-size: 1.23em;
+    font-weight: 600;
+  }
+}
+
+.error {
+  font-size: 2em;
+  padding: 15px;
+}
