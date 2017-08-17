@@ -13,15 +13,15 @@ const JobForm = (props) => {
         <div className="form-group">
           <label>Level</label>
           <label className="radio-inline">
-            <input name="level" type="radio" ref="level" value="intern"/>
+            <input type="radio" ref="level" value="intern"/>
             Intern
           </label>
           <label className="radio-inline">
-            <input name="level" type="radio" ref="level" value="junior"/>
+            <input type="radio" ref="level" value="junior"/>
             Junior
           </label>
           <label className="radio-inline">
-            <input name="level" type="radio" ref="level" value="senior"/>
+            <input type="radio" ref="level" value="senior"/>
             Senior
           </label>
         </div>

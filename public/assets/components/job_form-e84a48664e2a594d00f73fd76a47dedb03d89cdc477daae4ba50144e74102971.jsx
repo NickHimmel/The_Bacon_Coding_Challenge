@@ -12,30 +12,35 @@ const JobForm = (props) => {
         </div>
         <div className="form-group">
           <label>Level</label>
-          <label className="radio-inline">
-            <input name="level" type="radio" ref="level" value="intern"/>
-            Intern
-          </label>
-          <label className="radio-inline">
-            <input name="level" type="radio" ref="level" value="junior"/>
-            Junior
-          </label>
-          <label className="radio-inline">
-            <input name="level" type="radio" ref="level" value="senior"/>
-            Senior
-          </label>
+          <div className="radio">
+            <label>
+              <input type="radio" ref="level" value="intern"/>
+              Intern
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="radio" ref="level" value="junior"/>
+              Junior
+            </label>
+          </div>
+          <div className="radio">
+            <label>
+              <input type="radio" ref="level" value="senior"/>
+              Senior
+            </label>
+          </div>
         </div>
         <div className="form-group">
           <label>Enter Description</label>
-          <textarea ref="description" className="form-control" rows="6"></textarea>
+          <textarea ref="description" className="form-control" rows="8"></textarea>
         </div>
         <div className="form-group">
           <label>City</label>
           <input ref="city" placeholder='Enter city' />
         </div>
         <div className="form-group">
-          <label>State</label>
-          <select class="form-control" className="state" name="state">
+          <select class="form-control" id="state" name="state">
             <option ref="">N/A</option>
             <option ref="AK">Alaska</option>
             <option ref="AL">Alabama</option>
@@ -91,7 +96,7 @@ const JobForm = (props) => {
             <option ref="WY">Wyoming</option>
           </select>
         </div>
-        <button type="submit" onClick={this.handleClick} className="btn btn-default">Submit</button>
+        <button onClick={this.handleClick} className="pill-box">Submit</button>
       </form>
     </div>
   )
