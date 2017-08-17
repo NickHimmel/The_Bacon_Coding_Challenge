@@ -1,22 +1,27 @@
 .job-listing {
-  margin: 10px 25px;
+  color: #2c398f;
+  border-bottom: #DFDFDF solid 1px;
+  padding: 75px 25px;
+}
+
+.job-listing:last-child {
+  border-bottom: 0;
 }
 
 .job-title {
-  color: #2c398f;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 3em;
+  margin-bottom: 2px;
 }
 
 .job-company {
   margin-top: 0;
   font-size: 2em;
-  color: #7cf8fa;
+  font-weight: 400;
 }
 
 .city, .state {
   display: inline;
-  color: #23fdd8;
   font-size: 1.35em;
   font-weight: 300;
 }
