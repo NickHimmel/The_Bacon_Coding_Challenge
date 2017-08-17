@@ -27,7 +27,6 @@ class NewJob extends React.Component {
   render() {
     return (
       <div className="job-listing">
-        <div><h1 className="error"></h1></div>
         <div className="job-form-container">
           <h1>Post A Job</h1>
           <form className="job-form">
@@ -69,6 +68,7 @@ class NewJob extends React.Component {
             <button type="submit" onClick={this.handleClick} className="btn btn-default">Submit</button>
           </form>
         </div>
+        <div><h1 className="error"></h1></div>
       </div>
     )
   }
