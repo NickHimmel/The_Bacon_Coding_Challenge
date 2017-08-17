@@ -1,13 +1,36 @@
 .welcome-message {
-  padding: 100px 25px;
-  margin: 0;
-  color: #2c398f;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 5em;
+  padding: 100px 25px 40px 25px;
   background: #7cf8fa; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#7cf8fa, #23fdd8); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#7cf8fa, #23fdd8); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#7cf8fa, #23fdd8); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#7cf8fa, #23fdd8); /* Standard syntax */
+  h1 {
+    margin: 0;
+    color: #2c398f;
+    font-size: 5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    position: relative;
+    span {
+      font-weight: 300;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 1em;
+      border-bottom: 0.4em solid #2c398f;
+      top: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  p {
+    color: #2c398f;
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
 }
