@@ -11,7 +11,7 @@ class GetJob extends React.Component {
   render() {
     let job = this.state.job;
     return (
-      <div className="job-listing top-margin">
+      <div className="job-listing">
         <Job job={job}/>
       </div>
     )
