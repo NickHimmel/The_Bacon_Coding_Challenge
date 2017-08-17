@@ -91,7 +91,7 @@ const JobForm = (props) => {
             <option ref="WY">Wyoming</option>
           </select>
         </div>
-        <button type="submit" onClick={this.handleClick} className="btn btn-default">Submit</button>
+        <button type="submit" onClick={props.onClick} className="btn btn-default">Submit</button>
       </form>
     </div>
   )

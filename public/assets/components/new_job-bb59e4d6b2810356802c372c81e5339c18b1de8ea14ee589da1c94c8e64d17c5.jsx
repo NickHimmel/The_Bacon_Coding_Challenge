@@ -17,7 +17,8 @@ class NewJob extends React.Component {
       type: 'POST',
       data: { title: title, company: company, level: level, description: description, city: city, state: state, user_id: user_id },
       success: (response) => {
-        window.location.href = '/';
+        $(".success-failure h1").text('Your Job is Posted!')
+        window.location.href = APP_ROOT_URL
       }
     });
   }

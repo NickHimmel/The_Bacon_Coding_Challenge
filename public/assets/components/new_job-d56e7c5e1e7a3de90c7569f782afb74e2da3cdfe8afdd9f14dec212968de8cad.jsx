@@ -8,6 +8,7 @@ class NewJob extends React.Component {
     let title = this.refs.title.value;
     let company = this.refs.company.value;
     let level = this.refs.level.value;
+    let salary = this.refs.salary.value;
     let description = this.refs.description.value;
     let city = this.refs.city.value;
     let state = this.refs.state.value;
@@ -15,16 +16,15 @@ class NewJob extends React.Component {
     $.ajax({
       url: '/api/v1/jobs',
       type: 'POST',
-      data: { title: title, company: company, level: level, description: description, city: city, state: state, user_id: user_id },
+      data: { title: title, company: company, level: level, salary: salary, description: description, city: city, state: state, user_id: user_id },
       success: (response) => {
-        window.location.href = '/';
+        console.log('it worked!', response);
       }
     });
   }
   render() {
     return (
       <div className="job-listing top-margin">
-        <div className="success-failure"><h1></h1></div>
         <h1>Post A Job</h1>
         <form>
           <div className="form-group">
@@ -64,7 +64,9 @@ class NewJob extends React.Component {
           </div>
           <button type="submit" onClick={this.handleClick} className="btn btn-default">Submit</button>
         </form>
+
       </div>
+
     )
   }
 }

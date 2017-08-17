@@ -17,14 +17,13 @@ class NewJob extends React.Component {
       type: 'POST',
       data: { title: title, company: company, level: level, description: description, city: city, state: state, user_id: user_id },
       success: (response) => {
-        window.location.href = '/';
+        console.log('it worked!', response);
       }
     });
   }
   render() {
     return (
       <div className="job-listing top-margin">
-        <div className="success-failure"><h1></h1></div>
         <h1>Post A Job</h1>
         <form>
           <div className="form-group">
