@@ -23,7 +23,7 @@ class Api::V1::JobsController < Api::V1::BaseController
   private
 
   def job_params
-    params.permit(:title, :company, :level, :salary, :description, :city, :state, :user_id)
+    params.permit(:title, :company, :level, :description, :city, :state, :user_id)
   end
 
   def set_job

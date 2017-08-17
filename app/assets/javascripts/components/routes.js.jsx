@@ -14,6 +14,7 @@ const Routes = () => {
          <IndexRoute component={AllJobs}/>
          <Route path='/create' component={NewJob}/>
          <Route path='/jobs/:id' component={GetJob}/>
+         <Route path='/edir/:id' component={EditJob}/>
       </Route>
     </Router>
   )
