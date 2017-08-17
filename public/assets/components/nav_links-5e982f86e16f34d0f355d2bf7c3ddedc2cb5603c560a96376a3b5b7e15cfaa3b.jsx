@@ -19,7 +19,7 @@ const NavLinks = () => {
 const handleClick = () => {
   let hamburgerIcon = document.getElementById("hamburger_icon")
   let bars = hamburgerIcon.children;
-  let dropDownMenu = document.querySelector('.nav-links');
+  let dropDownMenu = document.querySelector('.nav_links');
   if (hamburgerIcon.classList.contains('closed')) {
     for (var i = 0; i < bars.length; i++) {
         bars[i].classList.add('change' + i);
@@ -36,4 +36,5 @@ const handleClick = () => {
     hamburgerIcon.classList.remove('open');
     dropDownMenu.classList.remove('show_menu');
   }
+  $('.nav-links').toggle();
 }

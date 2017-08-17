@@ -81,5 +81,40 @@
 
   .nav-links {
     display: none;
+    float: none;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 75px 100px 50px;
+    .pill-box {
+      font-size: 1.5em;
+      border: 0;
+      margin: 0;
+      padding: 15px;
+    }
+    .pill-box:hover{
+      color: #2c398f;
+      border: 0;
+      background-color: #fff;
+    }
+  }
+  
+  .show_menu {
+    display: block;
+  }
+
+  .nav-link {
+    padding: 15px;
+    li {
+      padding: 0;
+    }
+    li:hover {
+      border-bottom: 0;
+    }
+  }
+
+  .drop-down {
+    font-size: 1.5em;
+    display: block;
   }
 }

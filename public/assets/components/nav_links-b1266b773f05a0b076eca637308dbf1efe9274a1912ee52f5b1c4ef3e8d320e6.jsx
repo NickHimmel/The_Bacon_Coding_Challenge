@@ -9,8 +9,8 @@ const NavLinks = () => {
         <div></div>
       </a>
       <ul className="nav-links">
-        <Link className="nav-link drop-down"><li>Log In</li></Link>
-        <Link to="/create"><li className="pill-box drop-down">Post a Job</li></Link>
+        <Link className="nav-link"><li>Log In</li></Link>
+        <Link to="/create" className="pill-box"><li>Post a Job</li></Link>
       </ul>
     </div>
   )
@@ -19,7 +19,7 @@ const NavLinks = () => {
 const handleClick = () => {
   let hamburgerIcon = document.getElementById("hamburger_icon")
   let bars = hamburgerIcon.children;
-  let dropDownMenu = document.querySelector('.nav-links');
+  let dropDownMenu = document.querySelector('.nav_links');
   if (hamburgerIcon.classList.contains('closed')) {
     for (var i = 0; i < bars.length; i++) {
         bars[i].classList.add('change' + i);
