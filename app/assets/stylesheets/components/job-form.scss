@@ -1,5 +1,5 @@
 .job-form-container {
-  margin: 50px 5px;
+  margin: 50px 5px 10px 5px;
   border:  #DFDFDF solid 1px;
   border-radius: 20px;
   padding: 25px;
@@ -20,5 +20,7 @@
 
 .error {
   font-size: 2em;
+  color: #FD5B10;
+  font-weight: 600;
   padding: 15px;
 }

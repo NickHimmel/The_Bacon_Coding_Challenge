@@ -30,7 +30,7 @@ class NewJob extends React.Component {
         <div className="job-form-container">
           <h1>Post A Job</h1>
           <form className="job-form">
-            <div className="form-group has-error">
+            <div className="form-group">
               <label>Job Title</label>
               <input ref='title' />
             </div>
