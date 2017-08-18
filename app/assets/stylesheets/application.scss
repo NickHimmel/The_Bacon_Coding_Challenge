@@ -1,6 +1,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url("components/main.scss");
+@import url("components/nav.scss");
+@import url("components/pill-box.scss");
+@import url("components/welcome.scss");
+@import url("components/jobs.scss");
+@import url('components/job-form.scss');
 
-h1 {
-  color: red
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 112.5%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .1em;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }

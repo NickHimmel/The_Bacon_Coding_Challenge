@@ -1,0 +1,62 @@
+.job-listing {
+  color: #2c398f;
+  border-bottom: #DFDFDF solid 1px;
+  padding: 75px 50px;
+}
+
+.job-listing:last-child {
+  border-bottom: 0;
+}
+
+.job-title {
+  font-weight: 300;
+  font-size: 3em;
+  margin-bottom: 2px;
+}
+
+.job-company {
+  margin-top: 0;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.map-icon {
+  width: 18px;
+  margin-right: 6px;
+}
+
+.city, .state {
+  display: inline;
+  font-size: 1.35em;
+  font-weight: 300;
+}
+
+.state {
+  padding-left: 10px;
+}
+
+.description {
+  color: #2c398f;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 95%;
+}
+
+.job-button {
+  height: 38px;
+}
+
+.view-jobs {
+  float: right;
+}
+
+.top-margin {
+  margin-top: 100px;
+}
+
+@media (min-width: 900px) {
+  .job-listing {
+    padding: 75px 75px;
+  }
+}

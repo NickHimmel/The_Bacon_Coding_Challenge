@@ -16,14 +16,14 @@ class Api::V1::JobsController < Api::V1::BaseController
   end
 
   def update
-    @job.update(job_params)
+    @job.update!(job_params)
     head :no_content
   end
 
   private
 
   def job_params
-    params.permit(:title, :company, :level, :salary, :description, :city, :state, :user_id)
+    params.permit(:title, :company, :level, :description, :city, :state, :user_id)
   end
 
   def set_job

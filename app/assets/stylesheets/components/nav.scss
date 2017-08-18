@@ -1,0 +1,120 @@
+.nav-bar {
+  height: 75px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  border-bottom: #DFDFDF solid 1px;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 2.3em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-left: 25px;
+  color: #2c398f;
+  float: left;
+}
+
+#hamburger_icon {
+  color: #2c398f;
+  float: right;
+  margin: 12px 20px 0 0;
+  display: none;
+  width: 40px;
+}
+
+#hamburger_icon div {
+  background-color:  #2c398f;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.change0 {
+  transform: translateY(12px) rotate(135deg);
+  -moz-transform: translateY(12px) rotate(135deg);
+  -webkit-transform: translateY(12px) rotate(135deg);
+}
+
+.change1 {
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.change2 {
+  transform: translateY(-12px) rotate(-135deg);
+  -moz-transform: translateY(-12px) rotate(-135deg);
+  -webkit-transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-links {
+  margin: 18px 25px 10px 0;
+  float: right;
+}
+
+.nav-link {
+  font-size: 1.23em;
+  font-weight: 600;
+  color: #2c398f;
+}
+
+.nav-link li:hover{
+  border-bottom: 3px solid #23fdd8;
+}
+
+@media (max-width: 650px) {
+  #hamburger_icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    float: none;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 75px 100px 50px;
+    .pill-box {
+      font-size: 1.5em;
+      border: 0;
+      margin: 0;
+      padding: 15px;
+    }
+    .pill-box:hover{
+      color: #2c398f;
+      border: 0;
+      background-color: #fff;
+    }
+  }
+  
+  .show_menu {
+    display: block;
+  }
+
+  .nav-link {
+    padding: 15px;
+    li {
+      padding: 0;
+    }
+    li:hover {
+      border-bottom: 0;
+    }
+  }
+
+  .drop-down {
+    font-size: 1.5em;
+    display: block;
+  }
+}
