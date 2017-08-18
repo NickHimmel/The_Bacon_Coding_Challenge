@@ -10,7 +10,6 @@ class EditJob extends React.Component {
   }
 
   handleClick() {
-    let id = this.state.job.id;
     let title = this.refs.title.value;
     let company = this.refs.company.value;
     let level = this.refs.level.value;
@@ -19,7 +18,7 @@ class EditJob extends React.Component {
     let state = this.refs.state.value;
     let user_id = 1;
     $.ajax({
-      url: '/api/v1/jobs/' + id,
+      url: '/api/v1/jobs',
       type: 'PUT',
       data: { title: title, company: company, level: level, description: description, city: city, state: state, user_id: user_id },
       success: (response) => {
@@ -35,7 +34,7 @@ class EditJob extends React.Component {
     return (
       <div className="job-listing">
         <div className="job-form-container">
-          <h1>Edit Job</h1>
+          <h1>Edit A Job</h1>
           <form className="job-form">
             <div className="form-group has-error">
               <label>Job Title</label>
@@ -43,7 +42,7 @@ class EditJob extends React.Component {
             </div>
             <div className="form-group">
               <label>Company</label>
-              <input ref='company' placeholder={job.company}/>
+              <input ref='company'/>
             </div>
             <div className="form-group">
               <label>Level</label>
@@ -62,15 +61,15 @@ class EditJob extends React.Component {
             </div>
             <div className="form-group">
               <label>Enter Description</label>
-              <textarea ref="description" className="form-control" rows="6" placeholder={job.description}></textarea>
+              <textarea ref="description" className="form-control" rows="6"></textarea>
             </div>
             <div className="form-group">
               <label>City</label>
-              <input ref="city" placeholder={job.city}/>
+              <input ref="city" />
             </div>
             <div className="form-group">
               <label>Enter State Abbreviation</label>
-              <input ref="state" placeholder={job.state}/>
+              <input ref="state" />
             </div>
             <button type="submit" onClick={this.handleClick} className="btn btn-default">Submit</button>
           </form>

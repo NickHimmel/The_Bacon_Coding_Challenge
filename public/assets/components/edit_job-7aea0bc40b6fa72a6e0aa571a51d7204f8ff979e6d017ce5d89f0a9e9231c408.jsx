@@ -11,6 +11,7 @@ class EditJob extends React.Component {
 
   handleClick() {
     let id = this.state.job.id;
+    debugger
     let title = this.refs.title.value;
     let company = this.refs.company.value;
     let level = this.refs.level.value;

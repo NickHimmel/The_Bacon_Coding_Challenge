@@ -16,6 +16,7 @@ class EditJob extends React.Component {
     let level = this.refs.level.value;
     let description = this.refs.description.value;
     let city = this.refs.city.value;
+    debugger
     let state = this.refs.state.value;
     let user_id = 1;
     $.ajax({
@@ -66,7 +67,7 @@ class EditJob extends React.Component {
             </div>
             <div className="form-group">
               <label>City</label>
-              <input ref="city" placeholder={job.city}/>
+              <input ref="city" id="city" placeholder={job.city}/>
             </div>
             <div className="form-group">
               <label>Enter State Abbreviation</label>

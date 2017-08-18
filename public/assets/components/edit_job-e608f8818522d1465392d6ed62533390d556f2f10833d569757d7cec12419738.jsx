@@ -10,7 +10,6 @@ class EditJob extends React.Component {
   }
 
   handleClick() {
-    let id = this.state.job.id;
     let title = this.refs.title.value;
     let company = this.refs.company.value;
     let level = this.refs.level.value;
@@ -19,7 +18,7 @@ class EditJob extends React.Component {
     let state = this.refs.state.value;
     let user_id = 1;
     $.ajax({
-      url: '/api/v1/jobs/' + id,
+      url: '/api/v1/jobs',
       type: 'PUT',
       data: { title: title, company: company, level: level, description: description, city: city, state: state, user_id: user_id },
       success: (response) => {
@@ -35,7 +34,7 @@ class EditJob extends React.Component {
     return (
       <div className="job-listing">
         <div className="job-form-container">
-          <h1>Edit Job</h1>
+          <h1>Edit A Job</h1>
           <form className="job-form">
             <div className="form-group has-error">
               <label>Job Title</label>

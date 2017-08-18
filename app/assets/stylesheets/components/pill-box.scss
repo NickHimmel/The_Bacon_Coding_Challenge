@@ -5,6 +5,10 @@
   border: 3px solid #2c398f;
   color: #2c398f;
   margin-left: 10px;
+  transition: all 500ms linear;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .pill-box:hover {
