@@ -68,9 +68,11 @@
   font-size: 1.23em;
   font-weight: 600;
   color: #2c398f;
+  padding: 0;
+  margin: 10px;
 }
 
-.nav-link li:hover{
+.nav-link:hover {
   border-bottom: 3px solid #23fdd8;
 }
 
