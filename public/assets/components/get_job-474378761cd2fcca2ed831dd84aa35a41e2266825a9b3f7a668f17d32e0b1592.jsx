@@ -12,7 +12,7 @@ class GetJob extends React.Component {
     let job = this.state.job;
     return (
       <div className="job-listing top-margin">
-        <Link to='/'><h1 className="home-x">&#9587;</h1></Link>
+        <Link to='/'><h1 className="home-x">X</h1></Link>
         <Job job={job}/>
         <Link to={ {pathname: `/edit/${job.id}`} }><li className="pill-box view-jobs">Edit Job</li></Link>
       </div>

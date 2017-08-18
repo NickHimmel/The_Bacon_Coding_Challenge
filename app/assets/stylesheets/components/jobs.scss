@@ -55,6 +55,17 @@
   margin-top: 100px;
 }
 
+.home-x {
+  margin: 0;
+  float: right;
+  width: 60px;
+  text-align: center;
+  padding: 10px 0;
+  &:hover {
+    background: #23fdd8;
+  }
+}
+
 @media (min-width: 900px) {
   .job-listing {
     padding: 75px 75px;
